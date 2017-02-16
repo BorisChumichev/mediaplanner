@@ -1,0 +1,22 @@
+{
+  "name": "mediaplanner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ramda": "0.21.0",
+    "micro": "6.2.0",
+    "dotenv": "4.0.0",
+    "request-promise": "4.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^2.13.1",
+    "eslint-plugin-async-await": "0.0.0"
+  },
+  "engine": "node >= 8.0.0"
+}
