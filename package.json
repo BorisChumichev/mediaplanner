@@ -9,10 +9,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ramda": "0.21.0",
-    "micro": "6.2.0",
     "dotenv": "4.0.0",
-    "request-promise": "4.1.1"
+    "micro": "6.2.0",
+    "pg": "^6.1.2",
+    "ramda": "0.21.0",
+    "request": "^2.79.0",
+    "request-promise": "^4.1.1",
+    "sequelize": "^3.30.2"
   },
   "devDependencies": {
     "eslint": "^2.13.1",
