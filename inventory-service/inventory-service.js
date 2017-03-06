@@ -3,7 +3,7 @@ const packageModel = require('./models/package')
   , updateInventory = require('./scripts/update-inventory')
 
 setInterval(updateAdminData, 3e4) //update every 30 seconds
-setInterval(updateInventory, 108e5) //update every 3 hours
+setInterval(updateInventory, 36e5) //update every hour
 
 module.exports = async function (req, res) {
   const packages = await packageModel.findAll()
