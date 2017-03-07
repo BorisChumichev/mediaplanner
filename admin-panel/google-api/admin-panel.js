@@ -118,6 +118,15 @@ const storeStaticAdminDataToSheet = (auth, data) => new bb((resolve, reject) => 
     })
   })
 
+const sortByPad = packages =>
+    packages.sort((a,b) => {
+      if (a.padName < b.padName)
+        return -1
+      if (a.padName > b.padName)
+        return 1
+      return 0
+    })
+
 module.exports =
   { getAdminDataFromSheet: async () => {
       const auth = await getAuth()
@@ -131,6 +140,7 @@ module.exports =
 
   , inputDataToSheet: async packages => {
       const auth = await getAuth()
+      sortByPad(packages)
       await storeStaticAdminDataToSheet(auth, packages)
       await storeDynamicAdminDataToSheet(auth, packages)
     }
