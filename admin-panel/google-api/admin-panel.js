@@ -120,9 +120,11 @@ const storeStaticAdminDataToSheet = (auth, data) => new bb((resolve, reject) => 
 
 const sortByPad = packages =>
     packages.sort((a,b) => {
-      if (a.padName < b.padName)
+      const ac = a.padId + a.myTargetId / 1e4
+        , bc = b.padId + b.myTargetId / 1e4
+      if (ac < bc)
         return -1
-      if (a.padName > b.padName)
+      if (ac > bc)
         return 1
       return 0
     })
