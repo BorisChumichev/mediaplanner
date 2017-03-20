@@ -27,18 +27,18 @@ const getAuth = async () => {
 
 const staticTableToObj = row => (
     { myTargetId: parseInt(row[0])
-    , impressionsPrediction: parseInt(row[1].replace(/\,/g, ''))
-    , coveragePrediction: parseInt(row[2].replace(/\,/g, ''))
-    , ctr: parseFloat(row[3])
-    , preview: row[4]
+    , impressionsPrediction: row[1] ? parseInt(row[1].replace(/\,/g, '')) : null
+    , coveragePrediction: row[2] ? parseInt(row[2].replace(/\,/g, '')) : null
+    , ctr: row[3] ? parseFloat(row[3]) : null
+    , preview: row[4] || null
     }
   )
 
 const dynamicTableToObj = row => (
     { myTargetId: parseInt(row[0])
-    , impressionsLimit: parseInt(row[1].replace(/\,/g, ''))
-    , ctr: parseFloat(row[2])
-    , preview: row[3]
+    , impressionsLimit: row[1] ? parseInt(row[1].replace(/\,/g, '')) : null
+    , ctr: row[2] ? parseFloat(row[2]) : null
+    , preview: row[3] || null
     }
   )
 
