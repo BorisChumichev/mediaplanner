@@ -7,6 +7,9 @@ setInterval(updateInventory, 36e5) //update every hour
 
 module.exports = async function (req, res) {
   const packages = await packageModel.findAll({ where: { ctr: { $ne: null } } })
+  
+  res.setHeader('Access-Control-Allow-Origin', '*')
+
   return (
     { packages: packages
     , status:
