@@ -29,7 +29,6 @@ db.define('package',
   , preview:
     { type: STRING
     , defaultValue: 'https://media.giphy.com/media/TlK63EQwHQC4zauPPTq/giphy.gif'
-    , validate: { isUrl: true }
     }
   , impressionsLimit: { type: BIGINT, allowNull: true }
   , impressionsPrediction: { type: BIGINT, allowNull: true }
