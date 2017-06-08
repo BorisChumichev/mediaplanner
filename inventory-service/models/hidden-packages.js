@@ -7,7 +7,7 @@ module.exports = [
   , formatId: 0
   , formatName: 'Строчка в ОК'
   , formatType: 'static'
-  , priceType: 'week'
+  , priceType: 'weeks'
   , price: 700000
   , slotId: 0
   }
