@@ -5,7 +5,7 @@ module.exports = [
   , positionId: 0
   , positionName: 'Пункт в меню приложения'
   , formatId: 0
-  , formatName: '✨ Секретная строчка ОК ✨'
+  , formatName: 'Строчка в приложении ОК'
   , formatType: 'static'
   , priceType: 'week'
   , price: 700000
