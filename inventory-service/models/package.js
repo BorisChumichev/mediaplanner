@@ -10,6 +10,7 @@ const bb = require('bluebird')
   , { STRING, INTEGER, DOUBLE, BIGINT } = require('sequelize')
   , db = require('../../common/lib/db')
   , { getAdminDataFromSheet, inputDataToSheet } = require('../../admin-panel/google-api/admin-panel')
+  , hiddenPackages = require('./hidden-packages')
 
 const endpoint = postfix => `https://target.my.com/api/v2/${postfix}`
 
@@ -81,7 +82,7 @@ packageModel.myTargetAPI =
         packages
       )
 
-      await bb.resolve(normalizedPackages).map(
+      await bb.resolve(normalizedPackages.concat(hiddenPackages)).map(
           p => packageModel.upsert(p, { where: { myTargetId: p.myTargetId } })
         )
     }
