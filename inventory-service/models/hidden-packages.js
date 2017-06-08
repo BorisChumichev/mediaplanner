@@ -3,9 +3,9 @@ module.exports = [
   , padId: 55
   , padName: 'Одноклассники 2017НН'
   , positionId: 0
-  , positionName: 'Пункт в меню приложения'
+  , positionName: 'Пункт в главном меню'
   , formatId: 0
-  , formatName: 'Строчка в приложении ОК'
+  , formatName: 'Строчка в ОК'
   , formatType: 'static'
   , priceType: 'week'
   , price: 700000
