@@ -5,7 +5,7 @@ module.exports = [
   , positionId: 0
   , positionName: 'Пункт в главном меню'
   , formatId: 0
-  , formatName: 'Строчка в ОК'
+  , formatName: 'Строчка в ОК (мобильный веб)'
   , formatType: 'static'
   , priceType: 'weeks'
   , price: 700000
