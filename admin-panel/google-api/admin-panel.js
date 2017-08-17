@@ -73,7 +73,7 @@ const tablizeDynamic = p =>
   ]
 
 const tablizeStatic = p =>
-  [ `${p.padName}: ${p.formatName}, ${p.price}₽`
+  [ `${p.padName} - ${p.positionName}: ${p.formatName}, ${p.price}₽`
   , p.priceType
   , p.myTargetId
   , p.impressionsPrediction
