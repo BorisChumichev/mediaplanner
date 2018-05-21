@@ -24,6 +24,7 @@ db.define('package',
   , formatName: { type: STRING }
   , formatType: { type: STRING }
   , priceType: { type: STRING }
+  , status: { type: STRING }
   , price: { type: DOUBLE }
   , slotId: { type: INTEGER }
   , ctr: { type: DOUBLE }
