@@ -65,7 +65,7 @@ const getDynamicAdminDataFromSheet = auth => new bb((resolve, reject) =>
   )
 
 const tablizeDynamic = p =>
-  [ `(${p.slotId}) ${p.padName}: ${p.formatName}, CPM: ${p.price}₽`
+  [ `(${p.slotId ? p.slotId : 'слота нет' }) ${p.padName}: ${p.formatName}, CPM: ${p.price}₽`
   , p.myTargetId
   , p.impressionsLimit
   , p.ctr
@@ -73,7 +73,7 @@ const tablizeDynamic = p =>
   ]
 
 const tablizeStatic = p =>
-  [ `(${p.slotId}) ${p.padName} - ${p.positionName}: ${p.formatName}, ${p.price}₽`
+  [ `(${p.slotId ? p.slotId : 'слота нет' }) ${p.padName} - ${p.positionName}: ${p.formatName}, ${p.price}₽`
   , p.priceType
   , p.myTargetId
   , p.impressionsPrediction
