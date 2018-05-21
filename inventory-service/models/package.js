@@ -100,7 +100,7 @@ packageModel.googleAPI =
       await bb.resolve(adminData).map(
         p => packageModel.update(p, { where: { myTargetId: p.myTargetId } })
       )
-      await inputDataToSheet(await packageModel.findAll())
+      await inputDataToSheet(await packageModel.findAll({ where: { status: 'active' } }))
     }
   }
 
