@@ -55,6 +55,7 @@ packageModel.myTargetAPI =
       , priceType: path(['price_type', 'unit'])
       , price: compose(parseInt, prop('price'))
       , slotId: prop('slot_id')
+      , status: prop('status')
       }
 
   , getPackagesList: async () => {
