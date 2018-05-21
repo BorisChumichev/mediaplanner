@@ -19,7 +19,7 @@ const getAuth = async () => {
       googleCredentials['client_secret'],
       googleCredentials['redirect_uris'][0]
     )
-  
+
   oauth2Client.credentials = await googleTokenModel.getAccessToken()
 
   return oauth2Client
@@ -65,7 +65,7 @@ const getDynamicAdminDataFromSheet = auth => new bb((resolve, reject) =>
   )
 
 const tablizeDynamic = p =>
-  [ `${p.padName}: ${p.formatName}, CPM: ${p.price}₽`
+  [ `(${p.slotId}) ${p.padName}: ${p.formatName}, CPM: ${p.price}₽`
   , p.myTargetId
   , p.impressionsLimit
   , p.ctr
@@ -73,7 +73,7 @@ const tablizeDynamic = p =>
   ]
 
 const tablizeStatic = p =>
-  [ `${p.padName} - ${p.positionName}: ${p.formatName}, ${p.price}₽`
+  [ `(${p.slotId}) ${p.padName} - ${p.positionName}: ${p.formatName}, ${p.price}₽`
   , p.priceType
   , p.myTargetId
   , p.impressionsPrediction
