@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bluebird": "^3.4.7",
+    "bluebird": "^3.5.0",
     "dotenv": "4.0.0",
     "google-auth-library": "^0.10.0",
     "googleapis": "^17.1.0",
@@ -17,7 +17,7 @@
     "pg": "^6.1.2",
     "ramda": "0.21.0",
     "request": "^2.79.0",
-    "request-promise": "^4.1.1",
+    "request-promise": "^4.2.0",
     "sequelize": "^3.30.2"
   },
   "devDependencies": {
