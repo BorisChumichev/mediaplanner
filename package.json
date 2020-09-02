@@ -12,7 +12,7 @@
     "bluebird": "^3.5.0",
     "dotenv": "4.0.0",
     "google-auth-library": "^0.10.0",
-    "googleapis": "^17.1.0",
+    "googleapis": "^59.0.0",
     "micro": "6.2.0",
     "pg": "^6.1.2",
     "ramda": "0.21.0",
